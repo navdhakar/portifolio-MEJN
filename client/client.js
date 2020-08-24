@@ -3,7 +3,7 @@ const URI = 'http://localhost:5002/ser';
 const resdiv = document.querySelector('cont');
 listeninc();
 form.addEventListener('submit', (event) => {
-    event.preventDefault();
+   // event.preventDefault();
     const formData = new FormData(form);
     const name = formData.get('name');
     const value = formData.get('value');
