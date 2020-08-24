@@ -1,0 +1,28 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "run",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/navdhakar/portifolio-MEJN.git"
+  },
+  "keywords": [
+    "server"
+  ],
+  "author": "navdeep dhakar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/navdhakar/portifolio-MEJN/issues"
+  },
+  "homepage": "https://github.com/navdhakar/portifolio-MEJN#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
+  }
+}
