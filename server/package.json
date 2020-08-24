@@ -1,7 +1,7 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "",
+  "description": "server",
   "main": "index.js",
   "scripts": {
     "test": "run",
@@ -23,6 +23,8 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",
+    "monk": "^7.3.1",
     "morgan": "^1.10.0"
-  }
+  },
+  "devDependencies": {}
 }

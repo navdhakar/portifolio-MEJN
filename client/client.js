@@ -1,5 +1,7 @@
 const form = document.querySelector('form');
 const URI = 'http://localhost:5002/ser';
+const resdiv = document.querySelector('cont');
+listeninc();
 form.addEventListener('submit', (event) => {
     event.preventDefault();
     const formData = new FormData(form);
@@ -16,5 +18,16 @@ form.addEventListener('submit', (event) => {
            'content-type': 'application/json'
        }
 
+   }).then(res => res.json()).
+   then(createddb => {
+       console.log(createddb);
    });
+   
 });
+
+function listeninc(){
+    fetch(URI).then(res => res.json()).
+    then(datab => {
+     console.log(datab);
+    });
+}
