@@ -1,33 +1,12 @@
-const form = document.querySelector('form');
-const URI = 'http://localhost:5002/ser';
-const resdiv = document.querySelector('cont');
-listeninc();
-form.addEventListener('submit', (event) => {
-   // event.preventDefault();
-    const formData = new FormData(form);
-    const name = formData.get('name');
-    const value = formData.get('value');
-    const data = {
-        name,
-        value
-    };
-   fetch(URI, {
-       method: 'POST',
-       body: JSON.stringify(data),
-       headers: {
-           'content-type': 'application/json'
-       }
 
-   }).then(res => res.json()).
-   then(createddb => {
-       console.log(createddb);
-   });
-   
-});
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems, options);
+  });
 
-function listeninc(){
-    fetch(URI).then(res => res.json()).
-    then(datab => {
-     console.log(datab);
-    });
-}
+  var collapsibleElem = document.querySelector('.collapsible');
+  var collapsibleInstance = M.Collapsible.init(collapsibleElem, options);
+
+  // Or with jQuery
+  var instance = M.Sidenav.getInstance(elem);
+  instance.open();
