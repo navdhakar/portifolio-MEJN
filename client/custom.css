@@ -2,5 +2,5 @@ body {
   background-image: url('portfolio.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: auto auto;                  
+  background-size: 100% auto;                  
 }         		 
