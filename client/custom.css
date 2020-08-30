@@ -184,7 +184,7 @@ img:hover {
 
 @media screen and (max-width: 1080px) {
   #nam {
-    margin-left: 25%;
+    margin-left: 18%;
   }
   #msg {
     margin-left: 0px;
@@ -195,19 +195,19 @@ img:hover {
     margin-top: 2px;
     text-align: right;
     margin-left: -100px;
-    margin-right: 10px;
+    margin-right: -5px;
     color: rgb(255, 255, 255);
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     animation: text-blink 3s infinite;
-    font-size: 30px;
+    font-size: 25px;
   }
   #msg2 {
     text-align: right;
-    margin-right: 20px;
+    margin-right: -5px;
     color: rgb(255, 255, 255);
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     margin-right: 20px;
     animation: text-blinki 3s infinite;
-    font-size: 30px;
+    font-size: 25px;
   }
 }
