@@ -18,6 +18,8 @@ function exp() {
   ab.style.backgroundImage = "linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%)";
 
   ab.style.backgroundClip = "text";
+  ab.style.webkitBackgroundClip = "text";
+  ab.style.mozBackgroundClip = "text";
   ab.style.webkitTextFillColor = "transparent";
   ab.style.webkitTextFillColor = "transparent";
   ab.style.textShadow = "6px 0 8px rgba(59, 18, 209, 0.3)";

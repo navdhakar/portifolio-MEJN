@@ -98,6 +98,8 @@ img:hover {
   background-image: linear-gradient(90deg, #fa8bff 0%, #2bd2ff 52%, #2bff88 90%);
   background-size: 100%;
   background-clip: text;
+  -moz-background-size: 100%;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
   text-shadow: 6px 0 8px rgba(59, 18, 209, 0.3);
@@ -112,6 +114,8 @@ img:hover {
   background-image: linear-gradient(90deg, #fa8bff 0%, #2bd2ff 52%, #2bff88 90%);
   background-size: 100%;
   background-clip: text;
+  -moz-background-size: 100%;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
   text-shadow: 6px 0 8px rgba(59, 18, 209, 0.3);
