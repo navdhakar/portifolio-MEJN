@@ -2,7 +2,7 @@
 
 body {
   background-color: #f4d03f;
-  background-image: linear-gradient(132deg, #f4d03f 0%, #16a085 100%);
+  background-image: url('bg.png');
 
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -135,10 +135,11 @@ img:hover {
 #nav {
   margin-top: -45px;
   height: 120px;
-  background-color: #4158d0;
-  background-image: linear-gradient(90deg, #4158d0 0%, #c850c0 46%, #ffcc70 100%);
+
+  background-color: #000000;
+  background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
   background-size: 100% 400px;
-  border-bottom: 1px solid rgb(196, 199, 184);
+  border-bottom: 1px solid black;
   border-radius: 0 0 15px 15px;
 }
 #nam {
@@ -299,8 +300,8 @@ img:hover {
   margin-top: -120px;
   margin-left: 1320px;
   height: 120px;
-  background-color: #4158d0;
-  background-image: linear-gradient(90deg, #4158d0 0%, #c850c0 46%, #ffcc70 100%);
+  background-color: #5b6467;
+  background-image: linear-gradient(315deg, #5b6467 0%, #8b939a 74%);
   border-bottom: 1px solid rgb(196, 199, 184);
   border-radius: 15px 0 15px 15px;
   width: 50px;
