@@ -3,6 +3,7 @@
 var n = document.getElementById('nav');
 var pr = document.getElementById('profile');
 pr.addEventListener('mouseover', exp);
+pr.addEventListener('mouseout', shr);
 var ab = document.createElement('h4');
 var ln = document.createElement('div');
 var con = document.createElement('p');
@@ -33,15 +34,13 @@ function exp() {
   ln.style.borderTop = '1px solid rgb(196, 199, 184)';
   ln.style.marginLeft = '37%';
   bio.style.display = '';
-  modern.style.display = '';
 }
-pr.addEventListener('mouseout', shr);
+
 function shr() {
   n.style.height = '120px';
   ab.innerHTML = '';
   ln.style.display = 'none';
   bio.style.display = 'none';
-  modern.style.display = 'none';
 }
 function somefunc() {
   var dj = 'loda lassan';
