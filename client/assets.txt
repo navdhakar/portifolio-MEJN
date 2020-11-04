@@ -1,0 +1,79 @@
+    <div class="col-12" id="nav">
+        <h1 id="nam">NAVDEEP</h1>
+        <img src="profile.png" id="profile" />
+      </div>
+    </div>
+  
+
+      <div class="col-1" id="navl">
+        <h4 id="projectsh" style="margin-top: 240px; margin-left: 530px; color: rgb(255, 255, 255)">projects</h4>
+        <div id="projects"></div>
+      </div>
+      <div class="col-1" id="abt">
+        <div id="tw-cont">
+          <a href="https://twitter.com/nav_dhakar"><img src="twitter.png" id="twitter" /></a>
+        </div>
+
+        <div id="gh-cont">
+          <a href="https://github.com/navdhakar"><img src="Octocat.png" id="github" /></a>
+        </div>
+        <div id="li-cont">
+          <a href="https://www.linkedin.com/in/navdeep-dhakar-a56b12198/"><img src="linkedin.png" id="linkedin" /></a>
+        </div>
+        <div id="in-cont">
+          <a href="https://www.instagram.com/nav_dhakar"><img src="insta.png" id="insta" /></a>
+        </div>
+        <div id="f-cont">
+          <a href="https://www.facebook.com/navdeep.dhakar"><img src="facebook-n.png" id="facebook" /></a>
+        </div>
+      </div>
+    </div>
+    <div id="bio">
+      <h5 id="info">
+        part time student of bachelor in computer science.full time front-end,backend and dynamically animated web developer and game dev enthusiast.i
+        love to learn and work with modern technology.like to do designing and 2D/3D modelling
+      </h5>
+    </div>
+    <div id="modern" style="margin-top: -240px; margin-left: 850px">
+      <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+      <lottie-player
+        src="https://assets3.lottiefiles.com/packages/lf20_1LhsaB.json"
+        background="transparent"
+        speed="1"
+        style="width: 500px; height: 350px"
+        loop
+        autoplay
+      ></lottie-player>
+    </div>
+    <div class="row">
+      <div class="col-9" id="langsp">
+        <h4 id="head">Languages and tools i use</h4>
+        <h5 id="cont">i know HTML5, Javascript, CSS3, React.</h5>
+        <h5 id="cont">can code proficiently in c/c++, Python, code assembly with multiple processor architecture.</h5>
+        <h5 id="cont">use expressjs, nodejs, django in web backend.</h5>
+        <h5 id="cont">use blender, photoshop for design and game animation.</h5>
+        <h5 id="cont">use opengl and currently learning vulkan for graphics programming.</h5>
+      </div>
+      <div class="col-3" id="lang" style="margin-left: 800px; margin-top: -200px">
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <lottie-player
+          src="https://assets7.lottiefiles.com/packages/lf20_z01atlv1.json"
+          background="transparent"
+          speed="1"
+          style="width: 500px; height: 400px"
+          loop
+          autoplay
+        ></lottie-player>
+      </div>
+    </div>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <div id="projec" style="margin-top: -900px; margin-left: 640px; position: fixed">
+      <lottie-player
+        src="https://assets5.lottiefiles.com/packages/lf20_0i7tmxi6.json"
+        background="transparent"
+        speed="1"
+        style="width: 300px; height: 400px"
+        loop
+        autoplay
+      ></lottie-player>
+    </div>
