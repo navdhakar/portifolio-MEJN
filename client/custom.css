@@ -1,29 +1,130 @@
 /** @format */
-
 body {
-  background-color: #f4d03f;
   background-image: url('bg.png');
 
-  background-repeat: no-repeat;
+  background-repeat: repeat-y, repeat-x;
   background-attachment: fixed;
-  background-size: 100% auto;
+  background-size: auto auto;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none;
-  overflow-x: hidden;
   overflow: -moz-scrollbars-none;
 }
-.body::-webkit-scrollbar {
-  display: none;
-  width: 0;
+* {
+  box-sizing: border-box;
 }
+[class*='col-'] {
+  float: left;
+  padding: 15px;
+}
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.col-12 {
+  width: 100%;
+}
+.row::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+#nav {
+  margin-top: -45px;
+  height: 120px;
 
+  background-color: #000000;
+  background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+  background-size: 100% 400px;
+  border-bottom: 1px solid black;
+  border-radius: 0 0 15px 15px;
+}
+#nam {
+  font-family: 'Pacifico', cursive;
+  margin-left: 40%;
+  padding-top: 30px;
+
+  background-color: #f3ec78;
+  background-image: linear-gradient(132deg, #f4d03f 0%, #16a085 100%);
+
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  animation: namanim 1s infinite;
+}
+@keyframes namanim {
+  100% {
+    background-image: linear-gradient(132deg, #f4d03f 0%, #16a085 100%);
+  }
+  99% {
+    background-image: linear-gradient(180deg, #a9c9ff 0%, #ffbbec 100%);
+  }
+  60% {
+    background-image: linear-gradient(0deg, #ffdee9 0%, #b5fffc 100%);
+  }
+  49% {
+    background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
+  }
+  0% {
+    background-image: linear-gradient(19deg, #3eecac 0%, #ee74e1 100%);
+  }
+}
+#profile {
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  margin-top: -300px;
+  box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgb(196, 199, 184);
+}
+#profile:hover {
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.2) 25%,
+    rgba(255, 255, 255, 0.2) 75%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.5);
+}
 #twitter {
   width: 50px;
   height: 50px;
   border-radius: 25px;
 }
 #tw-cont {
-  margin-top: -190px;
+  margin-top: 70px;
   margin-left: 5px;
   width: 50px;
   height: 50px;
@@ -81,21 +182,10 @@ body {
   height: 50px;
   border-radius: 25px;
 }
-img:hover {
-  background: -moz-linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.2) 25%,
-    rgba(255, 255, 255, 0.2) 75%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  box-shadow: 4px 4px 4px rgba(0, 140, 186, 0.5);
-}
 #msg {
-  margin-top: 200px;
-  margin-left: 400px;
+  margin-top: -200px;
+  margin-left: 240px;
   margin-right: 20px;
-  width: 900px;
   height: 150px;
 }
 #msg1 {
@@ -131,133 +221,12 @@ img:hover {
   -moz-text-fill-color: transparent;
   text-shadow: 6px 0 8px rgba(59, 18, 209, 0.3);
 }
-
-#nav {
-  margin-top: -45px;
-  height: 120px;
-
-  background-color: #000000;
-  background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
-  background-size: 100% 400px;
-  border-bottom: 1px solid black;
-  border-radius: 0 0 15px 15px;
-}
-#nam {
-  font-family: 'Pacifico', cursive;
-  margin-left: 40%;
-  padding-top: 30px;
-
-  background-color: #f3ec78;
-  background-image: linear-gradient(132deg, #f4d03f 0%, #16a085 100%);
-
-  background-size: 100%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  animation: namanim 1s infinite;
-}
-@keyframes namanim {
-  100% {
-    background-image: linear-gradient(132deg, #f4d03f 0%, #16a085 100%);
-  }
-  99% {
-    background-image: linear-gradient(180deg, #a9c9ff 0%, #ffbbec 100%);
-  }
-  60% {
-    background-image: linear-gradient(0deg, #ffdee9 0%, #b5fffc 100%);
-  }
-  49% {
-    background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
-  }
-  0% {
-    background-image: linear-gradient(19deg, #3eecac 0%, #ee74e1 100%);
-  }
-}
-#profile {
-  width: 80px;
-  height: 80px;
-  border-radius: 40px;
-  margin-top: -50px;
-  box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.5);
-  border: 1px solid rgb(196, 199, 184);
-}
-#profile:hover {
-  background: -moz-linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.2) 25%,
-    rgba(255, 255, 255, 0.2) 75%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.5);
-}
-
-@media screen and (max-width: 1080px) {
-  #nam {
-    margin-left: 20%;
-    font-size: 40px;
-  }
-  #msg {
-    margin-left: 0px;
-    padding: 0px;
-    width: 100%;
-  }
-  #msg1 {
-    margin-top: 2px;
-    text-align: right;
-    margin-left: -100px;
-    margin-right: 1px;
-    color: rgb(255, 255, 255);
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    animation: text-blink 3s infinite;
-    font-size: 25px;
-  }
-  #msg2 {
-    text-align: right;
-    margin-right: -5px;
-    color: rgb(255, 255, 255);
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin-right: 20px;
-    animation: text-blinki 3s infinite;
-    font-size: 25px;
-  }
-}
-
-#bio {
-  margin-top: -660px;
-  margin-left: 250px;
-  margin-right: 20px;
-  width: 600px;
-  height: 150px;
-}
-
-#info {
-  text-align: right;
-  margin-left: 10px;
-  margin-top: 90px;
-  color: rgb(164, 231, 39);
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  margin-right: 20px;
-  background-color: #ffffff;
-
-  background-size: 100%;
-  background-clip: text;
-  -moz-background-size: 100%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  text-shadow: 6px 0 8px rgba(59, 18, 209, 0.3);
-}
 #langsp {
-  margin-top: 190px;
-  margin-left: 80px;
+  margin-top: 40px;
+  margin-left: -20px;
 
-  width: 600px;
   height: 150px;
 }
-
 #cont {
   text-align: right;
   margin-left: 10px;
@@ -292,37 +261,62 @@ img:hover {
   -moz-text-fill-color: transparent;
   text-shadow: 6px 0 8px rgba(59, 18, 209, 0.3);
 }
-#abt {
-  margin-top: -20px;
-  position: fixed;
-}
-#navl {
-  margin-top: -120px;
-  margin-left: 1320px;
-  height: 120px;
-  background-color: #5b6467;
-  background-image: linear-gradient(315deg, #5b6467 0%, #8b939a 74%);
-  border-bottom: 1px solid rgb(196, 199, 184);
-  border-radius: 15px 0 15px 15px;
-  width: 50px;
+#bio {
+  margin-top: -600px;
+  margin-left: 100px;
+  margin-right: 20px;
+  width: 600px;
   height: 150px;
-  position: fixed;
-  scrollbar-width: none;
-  overflow-y: hidden;
 }
-#ath {
+#info {
+  text-align: right;
+  margin-left: 10px;
+  margin-top: 0px;
+  color: rgb(164, 231, 39);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  margin-top: -4px;
-  margin-left: 7px;
-  font-style: italic;
-  font-size: 18px;
-  font-weight: bold;
+  margin-right: 20px;
+  background-color: #ffffff;
+
+  background-size: 100%;
+  background-clip: text;
+  -moz-background-size: 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  text-shadow: 6px 0 8px rgba(59, 18, 209, 0.3);
 }
-#at {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  margin-top: -8px;
-  margin-left: 7px;
-  font-style: italic;
-  font-size: 18px;
-  font-weight: bold;
+
+@media screen and (max-width: 1080px) {
+  #nam {
+    margin-left: 35%;
+  }
+  #msg {
+    margin-top: -250px;
+    margin-left: 80px;
+  }
+  #msg1 {
+    font-size: 30px;
+  }
+  #msg2 {
+    font-size: 30px;
+  }
+  #cont {
+    font-size: 20px;
+  }
+  #head {
+    font-size: 30px;
+  }
+  #lang {
+    width: 400px;
+    height: 300px;
+    margin-left: 720px;
+    margin-top: -60px;
+  }
+  #langsp {
+    margin-top: 60px;
+  }
+  #project {
+    margin-top: 60px;
+    margin-left: 200px;
+  }
 }
